@@ -1,0 +1,668 @@
+{
+  "title": "Sports Network Portal — Mobile App Demo · Players, Coaches & Parents",
+  "voiceCode": "am_adam",
+  "estimatedDurationSec": 600,
+  "scenes": [
+    {
+      "order": 1,
+      "chapter": "Cover",
+      "sceneType": "cover",
+      "title": "SNP Mobile — the app that ties a club together",
+      "durationSec": 14,
+      "headerElements": [
+        "SNP brand mark",
+        "Sports Network Portal",
+        "Mobile"
+      ],
+      "bullets": [
+        "players · coaches · parents",
+        "arabic · english · français",
+        "one club, one app"
+      ],
+      "narration": "this is the snp mobile app. one install, one login, and a whole club fits in your pocket. players check their training load, coaches mark attendance pitch-side, parents apply to academies, all from the same shell. let's walk through it persona by persona, screen by screen."
+    },
+    {
+      "order": 2,
+      "chapter": "App launch",
+      "sceneType": "phone-screen",
+      "title": "Splash · SNP boot",
+      "moduleKey": "splash",
+      "durationSec": 10,
+      "headerElements": [
+        "status bar",
+        "snp wordmark",
+        "loading dots"
+      ],
+      "bullets": [
+        "secure session restore",
+        "role lookup",
+        "language preload"
+      ],
+      "narration": "tap the icon and the splash kicks in. behind the scenes the app restores your session, fetches your role from the backend, and preloads the right language bundle. by the time the wordmark fades, the home screen already knows who you are."
+    },
+    {
+      "order": 3,
+      "chapter": "App launch",
+      "sceneType": "phone-screen",
+      "title": "Intro reels · routing to role-aware home",
+      "moduleKey": "intro_reels",
+      "durationSec": 14,
+      "headerElements": [
+        "skip",
+        "page dots 1/3",
+        "get started"
+      ],
+      "bullets": [
+        "3 onboarding reels",
+        "player · coach · external",
+        "auto-route by role"
+      ],
+      "narration": "first-time users see three short reels — train smarter, coach better, follow your club. swipe through or hit skip. once you land on get started, the router checks your role and drops you straight onto the right home screen, no extra menus to dig through."
+    },
+    {
+      "order": 4,
+      "chapter": "Auth",
+      "sceneType": "phone-screen",
+      "title": "Phone OTP · sign in",
+      "moduleKey": "auth",
+      "durationSec": 16,
+      "headerElements": [
+        "country code +966",
+        "phone number",
+        "send otp"
+      ],
+      "bullets": [
+        "6-digit code",
+        "resend timer 30s",
+        "biometric unlock next time"
+      ],
+      "narration": "auth is phone-first. pick your country code, type the number, tap send otp. a six-digit code lands by sms, you key it in, and you're in. on the next launch the app offers face id or fingerprint, so families on shared devices can still keep accounts separate."
+    },
+    {
+      "order": 5,
+      "chapter": "Auth",
+      "sceneType": "phone-screen",
+      "title": "Language picker + parent-of-child link",
+      "moduleKey": "auth",
+      "durationSec": 18,
+      "headerElements": [
+        "language selector",
+        "register as parent toggle"
+      ],
+      "rows": [
+        "English",
+        "العربية (Arabic) — RTL",
+        "Français",
+        "register as parent · link child profile"
+      ],
+      "bullets": [
+        "AR · EN · FR",
+        "RTL flips entire UI",
+        "parent toggle on signup"
+      ],
+      "narration": "next, language. english, العربية, or français — and arabic flips the entire layout right-to-left, including charts and menus. on signup there's a register as parent toggle. flip it on and you can attach a child profile, which is how a parent gets to see junior's attendance and reports later on."
+    },
+    {
+      "order": 6,
+      "chapter": "Player",
+      "sceneType": "phone-screen",
+      "title": "Player home · attendance widget",
+      "moduleKey": "players_home",
+      "durationSec": 18,
+      "headerElements": [
+        "☰ menu",
+        "club switcher",
+        "🔔 notifications"
+      ],
+      "rows": [
+        "training load · High",
+        "readiness · 8/10 sleep",
+        "test results · vertical jump 62cm",
+        "attendance · 18 P / 2 A this month"
+      ],
+      "bullets": [
+        "3 performance status cards",
+        "monthly P/A calendar",
+        "group switcher inside widget"
+      ],
+      "narration": "now meet the player. yousef opens the app and sees three status cards up top — training load high, readiness eight out of ten, latest test results. just below, the attendance widget shows eighteen present days, two absent, on a monthly calendar he can scroll. if he trains with multiple groups, he flips between them from the same card."
+    },
+    {
+      "order": 7,
+      "chapter": "Player",
+      "sceneType": "phone-screen",
+      "title": "Performance stats · AI insight",
+      "moduleKey": "players_performance",
+      "durationSec": 20,
+      "headerElements": [
+        "back",
+        "view full stats",
+        "share"
+      ],
+      "rows": [
+        "overall rating · 7.8 / 10",
+        "weekly sessions · 5",
+        "sprint 20m · 3.12s ↓",
+        "ai insight · recovery dip on tuesdays"
+      ],
+      "bullets": [
+        "progress chart over 12 weeks",
+        "match + physical metrics",
+        "coach reports inline"
+      ],
+      "narration": "tap view full stats and the performance module opens up. a twelve-week progress chart, overall rating seven point eight, five sessions this week, sprint times trending down. an ai insight banner flags a recovery dip on tuesdays — same engine that powers the coach dashboard, just summarized for the athlete."
+    },
+    {
+      "order": 8,
+      "chapter": "Player",
+      "sceneType": "phone-screen",
+      "title": "Tournament card · riyadh spring cup 2026",
+      "moduleKey": "players_home",
+      "durationSec": 14,
+      "headerElements": [
+        "upcoming tournaments",
+        "view all"
+      ],
+      "rows": [
+        "Riyadh Spring Cup 2026 · King Fahd | كأس الربيع",
+        "U-16 Football · 14 Mar – 22 Mar",
+        "your match · Sat 16 Mar · 6 PM"
+      ],
+      "bullets": [
+        "roster + fixtures",
+        "add to calendar",
+        "match-day reminder"
+      ],
+      "narration": "scroll a little further and you hit the tournament card. riyadh spring cup twenty twenty-six at king fahd stadium, his u-sixteen match is on the sixteenth of march at six pm. he saves it to his schedule, gets a match-day reminder push the morning of, and the venue, kit color, and meeting time all sit on the card."
+    },
+    {
+      "order": 9,
+      "chapter": "Player",
+      "sceneType": "phone-screen",
+      "title": "My groups · chat preview",
+      "moduleKey": "players_home",
+      "durationSec": 16,
+      "headerElements": [
+        "my groups",
+        "+ new message"
+      ],
+      "rows": [
+        "U-16 Football A · Coach Ahmed",
+        "📎 training_plan.pdf",
+        "Coach: bring shin guards tomorrow",
+        "3 unread"
+      ],
+      "bullets": [
+        "text · images · video · docs",
+        "coach announcements pinned",
+        "read receipts"
+      ],
+      "narration": "my groups gives him a chat thread per training group. coach ahmed can drop a pdf training plan, share a clip from yesterday's drills, or just remind everyone to bring shin guards. unread badges roll up to the home screen so nothing slips past."
+    },
+    {
+      "order": 10,
+      "chapter": "Player",
+      "sceneType": "phone-screen",
+      "title": "Profile · edit info, language, leave club",
+      "moduleKey": "players_home",
+      "durationSec": 16,
+      "headerElements": [
+        "☰ menu",
+        "edit profile",
+        "logout"
+      ],
+      "rows": [
+        "photo · name · DOB",
+        "change password",
+        "notification preferences",
+        "language",
+        "leave club"
+      ],
+      "bullets": [
+        "edit photo + personal info",
+        "notification toggles",
+        "leave-club confirmation"
+      ],
+      "narration": "from the side menu he opens his profile. update the photo, change password, tune which notifications he wants — match reminders yes, marketing no. and if he ever moves on, leave club is right here, gated behind a confirm dialog so it doesn't fire by accident."
+    },
+    {
+      "order": 11,
+      "chapter": "Coach",
+      "sceneType": "phone-screen",
+      "title": "Coach home · today's sessions",
+      "moduleKey": "coach_home",
+      "durationSec": 18,
+      "headerElements": [
+        "coach badge",
+        "employee mode toggle",
+        "🔔"
+      ],
+      "rows": [
+        "today · 3 sessions",
+        "U-16 Football · 4 PM · Pitch 2",
+        "U-14 Football · 6 PM · Pitch 1",
+        "new tournament request · draft"
+      ],
+      "bullets": [
+        "sessions for the day",
+        "academy programs card",
+        "tournament quick actions"
+      ],
+      "narration": "switch personas — meet coach ahmed. his home screen leads with today's three sessions, pitches and times. below that, an academy programs card for the syllabus he runs, and a tournament block with two quick actions, new request and view all. if he's also on payroll, an employee mode button up top jumps him into staff features."
+    },
+    {
+      "order": 12,
+      "chapter": "Coach",
+      "sceneType": "phone-screen",
+      "title": "My groups · roster + training plan",
+      "moduleKey": "coach_groups",
+      "durationSec": 16,
+      "headerElements": [
+        "+ new group",
+        "search",
+        "filter"
+      ],
+      "rows": [
+        "U-16 Football A · 22 players",
+        "U-14 Basketball · 18 players",
+        "Karate Stage 2 · 12 players"
+      ],
+      "bullets": [
+        "attendance · plan · monitoring",
+        "reports per player",
+        "group chat built-in"
+      ],
+      "narration": "from the groups tab he sees every squad he runs. tap u-sixteen football a and four pills appear — attendance, training plan, monitoring, reports. each player drills down into stats, attendance history, clinic visits, and coach feedback. it's the same data the player sees, just with edit rights."
+    },
+    {
+      "order": 13,
+      "chapter": "Coach",
+      "sceneType": "phone-screen",
+      "title": "Attendance marking · pitch-side",
+      "moduleKey": "coach_groups",
+      "durationSec": 18,
+      "headerElements": [
+        "date · today",
+        "mark all present",
+        "save"
+      ],
+      "rows": [
+        "Yousef Al-Mutairi · ✅ Present",
+        "Khalid Al-Otaibi · ⏰ Late",
+        "Fahad Al-Dosari · ❌ Absent · injury",
+        "Saad Al-Ghamdi · ✅ Present"
+      ],
+      "bullets": [
+        "one-tap per athlete",
+        "late + reason field",
+        "syncs to player + parent"
+      ],
+      "narration": "this is where the app earns its keep. on the touchline he opens today's attendance, taps each name — present, late, absent — adds a reason if needed. mark all present handles the easy days. as soon as he hits save, every player and every linked parent gets the update in real time."
+    },
+    {
+      "order": 14,
+      "chapter": "Coach",
+      "sceneType": "phone-screen",
+      "title": "Group chat · players + parents",
+      "moduleKey": "coach_groups",
+      "durationSec": 16,
+      "headerElements": [
+        "group: U-16 Football A",
+        "📎 attach",
+        "📷 camera"
+      ],
+      "rows": [
+        "📌 pinned · weekly training plan.pdf",
+        "Coach Ahmed: video review at 5pm",
+        "Parent of Yousef: will be 10 min late",
+        "🎥 drill_clip.mp4"
+      ],
+      "bullets": [
+        "players + parents in one thread",
+        "pin coach announcements",
+        "image · video · doc share"
+      ],
+      "narration": "the group chat is one shared thread for players and parents. the coach pins this week's plan as a pdf, drops a video drill, and one of the parents replies that yousef will be ten minutes late. no more whatsapp groups going stale — it all lives inside the club app."
+    },
+    {
+      "order": 15,
+      "chapter": "Coach",
+      "sceneType": "phone-screen",
+      "title": "Tournament request · new submission",
+      "moduleKey": "coach_home",
+      "durationSec": 18,
+      "headerElements": [
+        "new tournament request",
+        "save draft",
+        "submit"
+      ],
+      "rows": [
+        "name · Jeddah Tennis Open",
+        "sport · Tennis · 24 teams",
+        "dates · 12 – 18 Apr 2026",
+        "budget · SAR 42,000",
+        "status · pending admin"
+      ],
+      "bullets": [
+        "multi-step form",
+        "budget + venue + roster",
+        "routed to admin web portal"
+      ],
+      "narration": "when the coach wants to enter a new tournament, he taps new request. a multi-step form collects name, sport, dates, budget, venue, and the player roster from his groups. on submit it lands in the admin's web portal for approval, and he can track status right from this card."
+    },
+    {
+      "order": 16,
+      "chapter": "External user",
+      "sceneType": "phone-screen",
+      "title": "Guest home · menu cards",
+      "moduleKey": "external_user_home",
+      "durationSec": 16,
+      "headerElements": [
+        "☰ menu",
+        "🔍 search",
+        "📋 my applications"
+      ],
+      "rows": [
+        "Club | النادي",
+        "School | المدرسة",
+        "Academy Program | برنامج الأكاديمية",
+        "VIP Club Member | عضو نادي كبار الشخصيات"
+      ],
+      "bullets": [
+        "four entry tiles",
+        "no club required yet",
+        "applications icon top-right"
+      ],
+      "narration": "now switch to fatima, a parent who just installed the app. her home is a clean four-tile menu — club, school, academy program, vip club member. she hasn't joined anything yet, so the app keeps it simple. a little clipboard icon up top tracks any applications she opens."
+    },
+    {
+      "order": 17,
+      "chapter": "External user",
+      "sceneType": "phone-screen",
+      "title": "Club profile · follow",
+      "moduleKey": "external_user_home",
+      "durationSec": 16,
+      "headerElements": [
+        "back",
+        "follow",
+        "share"
+      ],
+      "rows": [
+        "Riyadh Falcons Sports Club | نادي صقور الرياض",
+        "12.4k followers · 4 sports",
+        "📸 media gallery · 86 photos",
+        "📅 next event · open day 22 Mar"
+      ],
+      "bullets": [
+        "bio · sports · venues",
+        "media + events",
+        "follow for push updates"
+      ],
+      "narration": "she taps club, searches riyadh falcons, and lands on their profile. bio, sports offered, photo gallery, upcoming events including an open day on the twenty-second. she hits follow, and from now on the club's announcements push straight to her phone."
+    },
+    {
+      "order": 18,
+      "chapter": "External user",
+      "sceneType": "phone-screen",
+      "title": "Academy application · 4 steps",
+      "moduleKey": "admission",
+      "durationSec": 22,
+      "headerElements": [
+        "step 2 of 4",
+        "back",
+        "next"
+      ],
+      "rows": [
+        "1 · child details · Yousef · DOB 2010",
+        "2 · sport · Football U-16",
+        "3 · documents · birth cert ✅ · medical ✅",
+        "4 · payment plan · SAR 1,800 / term"
+      ],
+      "bullets": [
+        "child info → sport → docs → fees",
+        "save draft anytime",
+        "submits to coach review"
+      ],
+      "narration": "she picks academy program. step one captures her child yousef's details — name, date of birth, government id. step two collects sport, age group, gender, and physical stats like height and weight. step three uploads birth certificate and medical clearance. step four is the review and final submit. once she submits, the application is on its way to the coach."
+    },
+    {
+      "order": 19,
+      "chapter": "External user",
+      "sceneType": "phone-screen",
+      "title": "Application status · my applications",
+      "moduleKey": "admission",
+      "durationSec": 14,
+      "headerElements": [
+        "my applications",
+        "filter"
+      ],
+      "rows": [
+        "Riyadh Falcons · Football U-16 — under review · 2d ago",
+        "Jeddah Eagles · Swimming U-12 — additional info needed",
+        "Tabuk Academy · Karate — approved ✅"
+      ],
+      "bullets": [
+        "status chips",
+        "resubmit on request",
+        "timeline per application"
+      ],
+      "narration": "the clipboard icon opens my applications. she sees three — falcons under review, eagles asking for extra info, and tabuk already approved. when a coach needs more documents, she taps in, adds them, and resubmits without starting over."
+    },
+    {
+      "order": 20,
+      "chapter": "Shared features",
+      "sceneType": "phone-screen",
+      "title": "VIP club services + entry passes",
+      "moduleKey": "vip_club",
+      "durationSec": 18,
+      "headerElements": [
+        "vip club",
+        "my passes",
+        "subscribe"
+      ],
+      "rows": [
+        "Premium Gym Access · SAR 600 / mo",
+        "Family Pool Pass · SAR 350 / mo",
+        "🎟 entry pass · QR · valid 06 – 09 Jun",
+        "exclusive event · members night 14 Jun"
+      ],
+      "bullets": [
+        "subscriptions + add-ons",
+        "qr entry pass at the gate",
+        "members-only events"
+      ],
+      "narration": "vip club is the premium tier for non-players — parents, fans, casual members. she subscribes to premium gym access and a family pool pass. each subscription generates a qr entry pass she scans at the gate, plus access to members-only events like the fourteenth of june members night."
+    },
+    {
+      "order": 21,
+      "chapter": "Shared features",
+      "sceneType": "phone-screen",
+      "title": "Club search · follow multiple clubs",
+      "moduleKey": "external_user_home",
+      "durationSec": 16,
+      "headerElements": [
+        "🔍 search clubs",
+        "filter · country",
+        "filter · sport"
+      ],
+      "rows": [
+        "Riyadh Falcons · 12.4k · ✅ following",
+        "Jeddah Eagles · 8.1k · + follow",
+        "Tabuk Sports Academy · 3.6k · + follow",
+        "Doha United · 5.2k · + follow"
+      ],
+      "bullets": [
+        "search by name or city",
+        "filter country + sport",
+        "follow many clubs"
+      ],
+      "narration": "search isn't limited to one club. she filters by country and sport, follows three more academies, and her feed now pulls events and announcements from every club she follows. one app, many clubs — useful when siblings train in different places."
+    },
+    {
+      "order": 22,
+      "chapter": "Shared features",
+      "sceneType": "phone-screen",
+      "title": "Push notifications · deep-linked",
+      "moduleKey": "external_user_home",
+      "durationSec": 14,
+      "headerElements": [
+        "🔔 notifications",
+        "mark all read"
+      ],
+      "rows": [
+        "Coach Ahmed marked Yousef present · 4:02 PM",
+        "Application approved · Tabuk Karate",
+        "Tournament reminder · Sat 6 PM",
+        "New message in U-16 Football A"
+      ],
+      "bullets": [
+        "per-event push",
+        "tap to deep-link",
+        "snooze + mute per topic"
+      ],
+      "narration": "every event in the system can fire a push — attendance marked, application approved, tournament reminder, new chat message. each one deep-links straight to the relevant screen, so a tap on the application notification opens that exact application, not a generic inbox."
+    },
+    {
+      "order": 23,
+      "chapter": "Shared features",
+      "sceneType": "phone-screen",
+      "title": "Multi-profile switcher · parent ↔ child",
+      "moduleKey": "auth",
+      "durationSec": 18,
+      "headerElements": [
+        "profile switcher",
+        "Fatima (parent)",
+        "Yousef (player)"
+      ],
+      "rows": [
+        "Fatima Saeed · parent · 3 linked children",
+        "Yousef Al-Mutairi · player · Falcons U-16",
+        "Layla Al-Mutairi · player · Eagles U-12",
+        "+ add another profile"
+      ],
+      "bullets": [
+        "one login, many profiles",
+        "tap to switch context",
+        "kid view is age-appropriate"
+      ],
+      "narration": "tap her name at the top and the profile switcher slides in. fatima the parent, yousef the player, layla the younger sister. one tap and the entire app re-skins — different home screen, different menu, different language even. kids see an age-appropriate view, parents see the oversight view."
+    },
+    {
+      "order": 24,
+      "chapter": "Admission deep dive",
+      "sceneType": "phone-screen",
+      "title": "Applicant submits · falcons U-16",
+      "moduleKey": "admission",
+      "durationSec": 16,
+      "headerElements": [
+        "academy program",
+        "submit application"
+      ],
+      "rows": [
+        "applicant · Yousef Al-Mutairi",
+        "sport · Football · U-16",
+        "previous club · Eagles U-14 (2024-25)",
+        "submitted · just now"
+      ],
+      "bullets": [
+        "captures previous club",
+        "docs attached",
+        "status: under review"
+      ],
+      "narration": "let's zoom into admissions end-to-end. fatima submits yousef's application to falcons u-sixteen. crucially, the form captures his previous club — eagles u-fourteen last season. that one field unlocks the cross-club history coaches care about."
+    },
+    {
+      "order": 25,
+      "chapter": "Admission deep dive",
+      "sceneType": "phone-screen",
+      "title": "Coach review · cross-club history",
+      "moduleKey": "admission",
+      "durationSec": 20,
+      "headerElements": [
+        "pending admissions",
+        "approve",
+        "reject",
+        "request info"
+      ],
+      "rows": [
+        "Yousef Al-Mutairi · U-16 Football",
+        "previous · Eagles U-14 · 2024-25",
+        "attendance · 92% · rating 7.6 / 10",
+        "coach note (Eagles): great work rate",
+        "documents · birth cert ✅ · medical ✅"
+      ],
+      "bullets": [
+        "full history surfaced",
+        "attendance + rating",
+        "previous coach notes"
+      ],
+      "narration": "over on coach ahmed's phone, the application drops into pending admissions. because yousef came from another snp club, the coach sees the full history — ninety-two percent attendance last season, seven point six rating, even a note from his previous coach about his work rate. no more blind tryouts."
+    },
+    {
+      "order": 26,
+      "chapter": "Admission deep dive",
+      "sceneType": "phone-screen",
+      "title": "Approved · joined the club",
+      "moduleKey": "admission",
+      "durationSec": 16,
+      "headerElements": [
+        "approved",
+        "welcome",
+        "open player profile"
+      ],
+      "rows": [
+        "✅ Yousef Al-Mutairi · approved",
+        "assigned group · U-16 Football A",
+        "coach · Ahmed Al-Mansoori",
+        "first session · Mon 10 Mar · 4 PM"
+      ],
+      "bullets": [
+        "auto-assign to group",
+        "welcome push to parent + player",
+        "player home unlocks"
+      ],
+      "narration": "ahmed taps approve. instantly, yousef is auto-assigned to u-sixteen football a, his first session lands on the calendar, and both yousef and fatima get a welcome push. yousef's external user home upgrades to the full player home we saw earlier — performance, attendance, group chat, all unlocked."
+    },
+    {
+      "order": 27,
+      "chapter": "Multi-language",
+      "sceneType": "phone-screen",
+      "title": "Arabic · French · English on the fly",
+      "moduleKey": "auth",
+      "durationSec": 18,
+      "headerElements": [
+        "profile › language",
+        "english · العربية · français"
+      ],
+      "rows": [
+        "English · LTR · Player Home",
+        "العربية · RTL · الصفحة الرئيسية للاعب",
+        "Français · LTR · Accueil du joueur"
+      ],
+      "bullets": [
+        "instant in-app switch",
+        "RTL mirrors layouts + charts",
+        "translated content + data"
+      ],
+      "narration": "language is a first-class feature, not a setting buried six menus deep. from profile, pick english, العربية, or français and the entire app re-renders without a restart. arabic mirrors the layout, flips the charts, and even pulls arabic versions of the club's content where available."
+    },
+    {
+      "order": 28,
+      "chapter": "Close",
+      "sceneType": "close",
+      "title": "your club, in everyone's pocket",
+      "durationSec": 14,
+      "headerElements": [
+        "SNP wordmark",
+        "Sports Network Portal",
+        "your club, in everyone's pocket"
+      ],
+      "bullets": [
+        "players · coaches · parents · fans",
+        "one app · three languages",
+        "snp · sports network portal"
+      ],
+      "narration": "that's the snp mobile app — one shell, one login, four very different experiences for players, coaches, parents, and fans. attendance, performance, admissions, tournaments, chat, vip access, all wired to the same backend that powers the club's web portal. your club, in everyone's pocket."
+    }
+  ]
+}

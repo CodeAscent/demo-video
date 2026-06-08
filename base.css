@@ -1,0 +1,370 @@
+/* =========================================================================
+ * Sports Network Portal — demo video brand primitives
+ *
+ * Tokens + component recipes matched 1:1 to the live SNP UIs:
+ *   - Flutter mobile: snp_sas_flutter/lib/core/theme/app_colors.dart
+ *   - React portal:   snp_saas/src/theme/* (Plus Jakarta Sans, Slate palette)
+ *
+ * The live portal is LIGHT-themed Slate (palette.background.paper = #FFFFFF)
+ * with a dark Slate-900 sidebar (#0F172A). The mobile app is white-bodied
+ * with a primaryBlue (#1E3A8A) app header. Cover/intro scenes in this demo
+ * keep a dark theatrical backdrop — it's the player's chrome, not in-app UI.
+ * ========================================================================= */
+
+:root {
+  /* ── Mobile (Flutter AppColors — verbatim) ──────────────────────────── */
+  --mb-primary:#1E3A8A;            /* AppColors.primaryBlue            */
+  --mb-accent:#4285F4;              /* AppColors.accentBlue             */
+  --mb-periwinkle:#8E99C5;          /* AppColors.periwinkle             */
+  --mb-bg:#FFFFFF;                  /* AppColors.backgroundWhite        */
+  --mb-surface:#F3F4F6;             /* AppColors.backgroundLightGrey    */
+  --mb-field-fill:#F9FAFB;          /* AppColors.fieldFillColor         */
+  --mb-text-primary:#000000DE;      /* AppColors.textPrimary (black87)  */
+  --mb-text-secondary:#616161;      /* AppColors.textSecondary          */
+  --mb-text-dark-grey:#424242;      /* AppColors.textDarkGrey           */
+  --mb-text-hint:#BDBDBD;           /* AppColors.textHint               */
+  --mb-border:#E0E0E0;              /* AppColors.borderLight            */
+  --mb-border-extra-light:#EEEEEE;  /* AppColors.borderExtraLight       */
+  --mb-border-grey:#D1D5DB;         /* AppColors.borderGrey             */
+  --mb-divider:#E5E7EB;             /* AppColors.divider                */
+  --mb-icon-grey:#9E9E9E;           /* AppColors.iconGrey               */
+  --mb-error:#F44336;               /* AppColors.errorRed (location pin)*/
+
+  --mb-success:#10B981;             /* AppColors.successGreen           */
+  --mb-warn:#F59E0B;                /* AppColors.warningAmber           */
+  --mb-danger:#EF4444;              /* AppColors.errorRedCustom         */
+
+  /* Menu tile pairs (bg + icon) */
+  --menu-vip-bg:#FFF3E0;       --menu-vip-icon:#FF9800;
+  --menu-academy-bg:#E3F2FD;   --menu-academy-icon:#2196F3;
+  --menu-clinic-bg:#FBDDE2;    --menu-clinic-icon:#F44336;
+  --menu-school-bg:#E8EAF6;    --menu-school-icon:#3F51B5;
+  --menu-store-bg:#FFFDE7;     --menu-store-icon:#FBC02D;
+
+  /* Player home status cards */
+  --status-training-bg:#FFEBEE;
+  --status-readiness-bg:#E8F5E9;
+  --status-tests-bg:#FFF8E1;
+
+  /* Player stage tags */
+  --tag-school:#5C6BC0;
+  --tag-academy:#26A69A;
+  --tag-professional:#42A5F5;
+
+  /* Mobile shadows */
+  --mb-shadow:0 2px 6px rgba(0,0,0,0.12);
+  --mb-shadow-light:0 1px 3px rgba(0,0,0,0.05);
+
+  /* ── Web (React portal theme — Slate palette) ────────────────────── */
+  --web-primary:#0F172A;            /* palette.primary.main · sideNav   */
+  --web-primary-light:#1E293B;      /* palette.primary.light            */
+  --web-secondary:#64748B;          /* palette.text.secondary           */
+  --web-surface:#F8FAFC;            /* palette.background.secondary     */
+  --web-paper:#FFFFFF;              /* palette.background.paper         */
+  --web-text-primary:#0F172A;
+  --web-text-secondary:#64748B;
+  --web-text-tertiary:#94A3B8;
+  --web-border:#E2E8F0;             /* palette.border.third             */
+  --web-border-soft:#F1F5F9;        /* palette.border.secondary         */
+  --web-border-alpha:rgba(15,23,42,0.08);
+
+  --web-cta-grad:linear-gradient(135deg,#111827 0%,#374151 100%);
+  --web-kpi-grad:linear-gradient(135deg,#6366F1 0%,#4F46E5 100%);
+
+  --web-success:#16A34A;       --web-success-bg:#DCFCE7;  --web-success-border:#BBF7D0;
+  --web-warning:#D97706;       --web-warning-bg:#FEF3C7;  --web-warning-border:#FDE68A;
+  --web-danger:#DC2626;        --web-danger-bg:#FEE2E2;   --web-danger-border:#FECACA;
+  --web-info:#2563EB;
+
+  --shadow-card-web:0 4px 20px rgba(0,0,0,0.04);
+  --shadow-card-web-hover:0 12px 40px rgba(0,0,0,0.08);
+  --shadow-cta-web:0 4px 14px rgba(0,0,0,0.15);
+
+  /* ── Shared radii ──────────────────────────────────────────────────── */
+  --radius-input:8px;
+  --radius-card:12px;
+  --radius-kpi:16px;
+  --radius-chip:999px;
+  --radius-sidebar-item:6px;
+
+  /* ── Typography ────────────────────────────────────────────────────── */
+  --font-display:'Plus Jakarta Sans','Inter',-apple-system,system-ui,sans-serif;
+  --font-body:'Inter',-apple-system,system-ui,sans-serif;
+  --transition-default:all 0.2s cubic-bezier(0.4,0,0.2,1);
+
+  /* ── Brand gradients ───────────────────────────────────────────────── */
+  --grad-1:linear-gradient(135deg,#1E3A8A 0%,#4285F4 100%);  /* mobile CTA */
+  --grad-2:linear-gradient(135deg,#4285F4 0%,#8E99C5 100%);  /* accent fade */
+
+  /* ── Dark theatrical backdrop (cover/intro scenes ONLY) ────────────── */
+  --stage-bg:#06081A;
+  --stage-text:#F5F7FF;
+  --stage-text-2:#C9CFE7;
+  --stage-text-3:#8D95B8;
+  --stage-text-mute:#5C6489;
+  --stage-hairline:rgba(255,255,255,0.07);
+  --stage-hairline-strong:rgba(255,255,255,0.14);
+  --stage-card:#131A3A;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{
+  height:100%;background:var(--stage-bg);color:var(--stage-text);overflow:hidden;
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:'ss01','cv11';
+}
+
+/* ── Stage: 1280×720 canvas, scaled to viewport ───────────────────────── */
+.stage{
+  position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;background:var(--stage-bg);
+}
+.stage-inner{
+  width:1280px;height:720px;position:relative;transform-origin:center;
+  background:var(--stage-bg);
+  background-image:
+    radial-gradient(ellipse 90% 60% at 20% 0%,rgba(66,133,244,0.18),transparent 60%),
+    radial-gradient(ellipse 70% 50% at 100% 100%,rgba(30,58,138,0.32),transparent 60%);
+}
+
+/* ── Scene: only the .active one is shown ─────────────────────────────── */
+.scene{
+  position:absolute;inset:0;display:none;
+  padding:48px 56px;align-items:center;justify-content:center;
+}
+.scene.active{display:flex}
+
+/* ── Type primitives ──────────────────────────────────────────────────── */
+.display{font-family:var(--font-display);font-weight:900;letter-spacing:-0.025em;line-height:0.96}
+.title{font-family:var(--font-display);font-weight:800;letter-spacing:-0.02em}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#93B4FF;font-weight:600}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+
+/* ── Cover block (cover / overview / persona-intro / close) ───────────── */
+.cover-block{
+  display:flex;flex-direction:column;align-items:center;gap:20px;
+  max-width:880px;padding:0 32px;text-align:center;color:var(--stage-text);
+}
+.cover-block .mark svg{width:96px;height:96px}
+.cover-block h1{
+  font-family:var(--font-display);font-size:64px;line-height:1.02;font-weight:900;letter-spacing:-0.03em;color:var(--stage-text);
+}
+.cover-block h1 em{font-style:normal;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:900}
+.cover-block .tag{font-size:19px;color:var(--stage-text-2);line-height:1.5;max-width:620px}
+.cover-block .bullets{display:flex;flex-direction:column;gap:12px;margin-top:8px;text-align:left}
+.cover-block .bullets li{list-style:none;font-size:18px;color:var(--stage-text-2);position:relative;padding-left:24px}
+.cover-block .bullets li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:#4285F4;box-shadow:0 0 16px #4285F4}
+.cover-block .credits{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:var(--stage-text-mute);letter-spacing:0.22em;margin-top:16px}
+.cover-block .badges{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+.cover-block .badges .b{padding:8px 14px;border:1px solid var(--stage-hairline-strong);border-radius:999px;background:rgba(255,255,255,0.04);color:var(--stage-text-2);font-size:13px;font-weight:600}
+
+/* ── Split layout (text + browser/phone side-by-side) ─────────────────── */
+.split{display:grid;grid-template-columns:0.95fr 1.15fr;gap:36px;width:100%;height:100%;align-items:center;padding:48px 56px}
+.split.flip{grid-template-columns:1.15fr 0.95fr}
+.split .copy{display:flex;flex-direction:column;gap:14px;color:var(--stage-text)}
+.split .copy h2{font-family:var(--font-display);font-size:38px;line-height:1.08;font-weight:800;letter-spacing:-0.02em;color:var(--stage-text)}
+.split .copy .sub{font-size:17px;color:var(--stage-text-2);font-weight:400;line-height:1.45;max-width:50ch}
+.split .copy ul.bullets{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.split .copy ul.bullets li{font-size:16px;color:var(--stage-text-2);position:relative;padding-left:22px;line-height:1.4}
+.split .copy ul.bullets li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:#4285F4;box-shadow:0 0 16px #4285F4}
+.split .copy .metric-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.split .copy .metric{background:rgba(255,255,255,0.04);border:1px solid var(--stage-hairline);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:0.04em;color:#93B4FF}
+.split .mock{display:flex;align-items:center;justify-content:center}
+
+/* =========================================================================
+ * BROWSER MOCK — live portal is LIGHT THEME with a dark Slate-900 sidebar
+ * Source: snp_saas/src/theme/*, MainLayout.jsx, KPICard.jsx, StyledComponents
+ * ========================================================================= */
+.browser{
+  width:100%;max-height:560px;
+  background:var(--web-paper);
+  border:1px solid var(--web-border);border-radius:14px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(15,23,42,0.18),0 0 0 1px rgba(15,23,42,0.04) inset;
+  display:flex;flex-direction:column;
+}
+.browser-chrome{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--web-surface);border-bottom:1px solid var(--web-border)}
+.dots{display:flex;gap:6px}
+.dots span{width:10px;height:10px;border-radius:50%}
+.dots span:nth-child(1){background:#ED6A5E}
+.dots span:nth-child(2){background:#F4BF50}
+.dots span:nth-child(3){background:#61C554}
+.url-bar{flex:1;background:var(--web-paper);border:1px solid var(--web-border);border-radius:8px;padding:5px 12px;font-size:11px;color:var(--web-text-secondary);font-weight:500;display:flex;align-items:center;gap:8px}
+.url-bar::before{content:"🔒";font-size:10px;opacity:0.6}
+
+.browser-body{display:flex;flex:1;min-height:0}
+
+/* Sidebar is the only dark surface in the live portal */
+.b-sidebar{width:180px;background:var(--web-primary);border-right:1px solid var(--web-border-alpha);padding:14px 8px;display:flex;flex-direction:column;gap:2px;font-size:13px}
+.b-sidebar .brand-cell{display:flex;align-items:center;gap:8px;padding:12px 10px 16px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:8px;color:#FFFFFF}
+.b-sidebar .brand-cell svg{width:22px;height:22px}
+.b-sidebar .brand-cell span{font-weight:800;font-size:12px;letter-spacing:0.06em}
+.b-side-item{padding:8px 10px;border-radius:var(--radius-sidebar-item);color:rgba(255,255,255,0.7);font-weight:540;display:flex;align-items:center;gap:12px;cursor:default;font-size:13px;transition:var(--transition-default)}
+.b-side-item .ic{font-size:14px;opacity:0.95}
+.b-side-item.active{background:rgba(255,255,255,0.1);color:#FFFFFF;font-weight:600}
+
+.b-main{flex:1;background:var(--web-paper);padding:20px 24px;display:flex;flex-direction:column;gap:16px;overflow:hidden;color:var(--web-text-primary)}
+.b-pageheader{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.b-pagetitle{font-family:var(--font-display);font-size:20px;font-weight:800;color:#111827;letter-spacing:-0.01em}
+.b-pagesub{font-size:12px;color:var(--web-text-secondary);font-weight:500;margin-top:2px}
+.b-actions{display:flex;gap:8px;align-items:center}
+
+.b-btn{font-size:12px;font-weight:600;border-radius:8px;padding:6px 14px;background:var(--web-paper);border:1px solid #E5E7EB;color:var(--web-text-primary);text-transform:none;cursor:default;transition:var(--transition-default)}
+.b-btn.primary{background:var(--web-cta-grad);border:none;color:#FFFFFF;box-shadow:var(--shadow-cta-web);border-radius:12px;padding:8px 16px}
+.b-search{font-size:12px;background:var(--web-paper);border:1px solid #E5E7EB;border-radius:12px;padding:6px 14px;color:var(--web-text-secondary);min-width:140px}
+
+.b-chips{display:flex;flex-wrap:wrap;gap:6px}
+.b-chip{font-size:11px;font-weight:600;padding:4px 10px;border-radius:var(--radius-chip);background:#F3F4F6;border:1px solid #E5E7EB;color:#4B5563;cursor:default}
+.b-chip.on{background:rgba(15,23,42,0.06);border:1px solid var(--web-primary);color:var(--web-primary)}
+
+/* KPI tiles — KPICard.jsx exact recipe */
+.b-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.b-kpi{background:var(--web-paper);border:1px solid rgba(229,231,235,0.6);border-radius:var(--radius-kpi);padding:16px 14px;box-shadow:var(--shadow-card-web);position:relative;overflow:hidden}
+.b-kpi .label{font-size:12px;color:#6B7280;font-weight:600;letter-spacing:0;text-transform:none}
+.b-kpi .val{font-family:var(--font-display);font-size:24px;font-weight:800;color:var(--web-text-primary);margin-top:6px;letter-spacing:-0.02em;line-height:1.2;background:var(--web-kpi-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.b-kpi .delta{display:inline-flex;align-items:center;height:22px;padding:0 8px;border-radius:var(--radius-chip);font-size:10px;font-weight:700;background:var(--web-success-bg);color:var(--web-success);margin-top:4px}
+.b-kpi.warn .delta{background:var(--web-danger-bg);color:var(--web-danger)}
+
+/* DataGrid */
+.b-table{background:var(--web-paper);border:1px solid var(--web-border-alpha);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;flex:1;min-height:0}
+.b-thead{display:flex;padding:10px 14px;background:var(--web-surface);border-bottom:1px solid var(--web-border-soft);font-size:11px;color:var(--web-text-secondary);font-weight:600;letter-spacing:0;text-transform:none}
+.b-thead .c1{flex:2.4} .b-thead .c2{flex:1} .b-thead .c3{flex:1;text-align:right}
+.b-row{display:flex;padding:10px 14px;align-items:center;border-bottom:1px solid var(--web-border-soft);font-size:13px;color:var(--web-text-primary)}
+.b-row:last-child{border-bottom:none}
+.b-row .c1{flex:2.4;color:var(--web-text-primary);font-weight:500;display:flex;flex-direction:column;gap:2px;min-width:0;padding-right:8px}
+.b-row .c1 .en{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.b-row .c1 .ar{font-family:'Cairo','Noto Sans Arabic',sans-serif;font-size:11px;color:var(--web-text-secondary);direction:rtl;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.b-row .c2{flex:1;color:var(--web-text-secondary);font-size:12px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:8px}
+.b-row .c3{flex:1;text-align:right;font-size:12px;font-weight:600;color:var(--web-text-secondary)}
+
+/* Pills — used in both surfaces */
+.pill{display:inline-flex;align-items:center;padding:2px 8px;font-size:11px;font-weight:700;border-radius:var(--radius-chip);line-height:1.5}
+.pill.ok{background:var(--web-success-bg);color:var(--web-success);border:1px solid var(--web-success-border)}
+.pill.warn{background:var(--web-warning-bg);color:var(--web-warning);border:1px solid var(--web-warning-border)}
+.pill.err{background:var(--web-danger-bg);color:var(--web-danger);border:1px solid var(--web-danger-border)}
+.pill.info{background:rgba(37,99,235,0.1);color:var(--web-info);border:1px solid rgba(37,99,235,0.3)}
+.pill.mute{background:#F3F4F6;color:var(--web-text-secondary);border:1px solid #E5E7EB}
+
+/* =========================================================================
+ * PHONE MOCK — Flutter Scaffold = white body with primaryBlue (#1E3A8A) bar
+ * Source: lib/core/widgets/app_bar.dart, player_home_screen.dart, etc.
+ * ========================================================================= */
+.phone{
+  width:300px;height:610px;background:#000;border-radius:38px;padding:8px;
+  box-shadow:0 40px 80px -10px rgba(0,0,0,0.45),0 0 0 1.5px #2a2f4a inset;
+  position:relative;
+}
+.phone-screen{
+  width:100%;height:100%;background:var(--mb-bg);border-radius:32px;overflow:hidden;
+  display:flex;flex-direction:column;position:relative;
+}
+.phone-notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:100px;height:26px;background:#000;border-radius:16px;z-index:5}
+
+/* Status bar lives over the blue header */
+.ph-status{padding:14px 18px 4px;display:flex;justify-content:space-between;font-size:10px;color:#FFFFFF;font-weight:700;align-items:center;background:var(--mb-primary)}
+.ph-status .right{display:flex;gap:4px;align-items:center;font-size:9px}
+
+/* App bar — flat #1E3A8A fill, NO gradient overlay */
+.ph-appbar{padding:12px 20px 20px;display:flex;align-items:center;justify-content:space-between;background:var(--mb-primary);position:relative}
+.ph-appbar .greet{display:flex;flex-direction:column;line-height:1.15}
+.ph-appbar .greet .hi{font-size:18px;font-weight:600;color:#FFFFFF;display:flex;align-items:center;gap:6px;font-family:var(--font-body)}
+.ph-appbar .greet .loc{font-size:12px;font-weight:400;color:rgba(255,255,255,0.9);display:flex;align-items:center;gap:4px;margin-top:4px}
+/* pin emoji is placed inline in HTML to control color */
+.ph-appbar .icons{display:flex;gap:12px}
+.ph-appbar .ic-btn{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:14px;color:#FFFFFF;position:relative}
+.ph-appbar .ic-btn .badge{position:absolute;top:-2px;right:-2px;width:14px;height:14px;background:var(--mb-danger);color:#fff;border-radius:50%;font-size:8px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid var(--mb-primary)}
+
+/* Body — WHITE Scaffold background, black87 text */
+.ph-body{flex:1;background:var(--mb-bg);padding:16px 16px 0;overflow:hidden;color:var(--mb-text-primary);display:flex;flex-direction:column;gap:12px}
+.ph-body.dark{background:var(--stage-card);color:var(--stage-text)}
+
+.ph-section-title{font-size:14px;font-weight:600;color:var(--mb-text-primary);display:flex;justify-content:space-between;align-items:center;margin-top:4px;font-family:var(--font-body)}
+.ph-section-title.dark{color:var(--stage-text)}
+.ph-section-title .more{font-size:14px;color:var(--mb-accent);font-weight:600}
+
+.ph-card{background:#FFFFFF;border:1px solid var(--mb-border);border-radius:var(--radius-card);padding:12px;box-shadow:var(--mb-shadow-light)}
+.ph-card.dark{background:var(--stage-card);border-color:var(--stage-hairline-strong);color:var(--stage-text)}
+
+.ph-row{display:flex;align-items:center;gap:12px;padding:12px;background:#FFFFFF;border-radius:var(--radius-card);border:1px solid var(--mb-border)}
+.ph-row .av{width:40px;height:40px;border-radius:50%;background:rgba(30,58,138,0.1);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:var(--mb-primary);flex-shrink:0}
+.ph-row .meta{flex:1;display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.ph-row .meta .n{font-size:14px;font-weight:600;color:var(--mb-text-primary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ph-row .meta .s{font-size:12px;font-weight:400;color:var(--mb-text-secondary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}
+.ph-row .meta .ar{font-family:'Cairo','Noto Sans Arabic',sans-serif;direction:rtl;text-align:left;font-size:11px;color:var(--mb-text-secondary);margin-top:2px}
+
+/* Tab strip — F3F4F6 surface, white active pill */
+.ph-tabs{display:flex;gap:4px;padding:4px;background:var(--mb-surface);border-radius:10px}
+.ph-tab{flex:1;font-size:12px;font-weight:600;padding:8px;text-align:center;border-radius:8px;color:var(--mb-text-secondary)}
+.ph-tab.on{background:#FFFFFF;color:var(--mb-primary);box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+
+/* Menu cards — exact AppColors pairs */
+.ph-menu{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.ph-menu .mc{background:#FFFFFF;border-radius:var(--radius-card);padding:16px 12px;border:1px solid var(--mb-border-extra-light);display:flex;flex-direction:column;gap:8px;min-height:88px;box-shadow:var(--mb-shadow-light)}
+.ph-menu .mc .ic{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.ph-menu .mc .ti{font-size:13px;font-weight:600;color:var(--mb-text-primary);line-height:1.2;font-family:var(--font-body)}
+.ph-menu .mc.bg-a .ic{background:var(--menu-vip-bg);color:var(--menu-vip-icon)}        /* VIP */
+.ph-menu .mc.bg-b .ic{background:var(--menu-academy-bg);color:var(--menu-academy-icon)}/* Academy */
+.ph-menu .mc.bg-c .ic{background:var(--menu-clinic-bg);color:var(--menu-clinic-icon)}  /* Clinic */
+.ph-menu .mc.bg-d .ic{background:var(--menu-school-bg);color:var(--menu-school-icon)}  /* School */
+.ph-menu .mc.bg-e .ic{background:var(--menu-store-bg);color:var(--menu-store-icon)}    /* Store */
+
+/* Attendance widget — matches lib/core/widgets/attendance_widget.dart */
+.ph-attendance{background:#FFFFFF;border-radius:var(--radius-card);padding:14px;border:1px solid var(--mb-border);box-shadow:var(--mb-shadow-light)}
+.ph-att-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:8px}
+.ph-att-bar .day{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:9px;color:var(--mb-text-secondary)}
+.ph-att-bar .day .dot{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700}
+.ph-att-bar .day .dot.p{background:rgba(16,185,129,0.12);color:var(--mb-success)}
+.ph-att-bar .day .dot.a{background:rgba(239,68,68,0.12);color:var(--mb-danger)}
+.ph-att-bar .day .dot.x{background:var(--mb-surface);color:var(--mb-icon-grey)}
+
+/* Hero stat card — primaryBlue → accentBlue gradient */
+.ph-stat-card{background:var(--grad-1);color:#FFFFFF;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:6px;box-shadow:0 4px 12px rgba(30,58,138,0.25)}
+.ph-stat-card .label{font-size:11px;font-weight:600;opacity:0.9}
+.ph-stat-card .val{font-family:var(--font-display);font-size:24px;font-weight:800;letter-spacing:-0.02em}
+.ph-stat-card .delta{font-size:11px;font-weight:600;background:rgba(255,255,255,0.18);padding:3px 8px;border-radius:var(--radius-chip);align-self:flex-start}
+
+/* Input fields — F9FAFB fill, D1D5DB border, 8px radius */
+.ph-input{background:var(--mb-field-fill);border:1px solid var(--mb-border-grey);border-radius:var(--radius-input);padding:12px 14px;font-size:13px;color:var(--mb-text-hint);display:flex;justify-content:space-between;align-items:center}
+.ph-input .v{color:var(--mb-text-primary);font-weight:500}
+
+/* Primary CTA — flat #1E3A8A, NOT a gradient */
+.ph-cta{background:var(--mb-primary);color:#FFFFFF;padding:14px;border-radius:var(--radius-input);text-align:center;font-size:13px;font-weight:600;letter-spacing:0;box-shadow:0 4px 12px rgba(30,58,138,0.3);font-family:var(--font-body)}
+
+/* Phone pair: two phones side by side */
+.phone-pair{display:flex;gap:18px;align-items:center;justify-content:center}
+
+/* ── Animations ──────────────────────────────────────────────────────── */
+.scene.active .a-fadeup{animation:fadeup 700ms cubic-bezier(.2,.7,.2,1) both}
+.scene.active .a-fade{animation:fadein 700ms ease both}
+.scene.active .a-scale{animation:scalein 700ms cubic-bezier(.2,.7,.2,1) both}
+.scene.active .a-pulse-v{animation:pulseV 2.4s ease-in-out infinite}
+.scene.active .a-typewriter{overflow:hidden;white-space:nowrap;border-right:2px solid var(--mb-accent);animation:typewriter 1.4s steps(40) both,blink 600ms step-end infinite}
+.scene.active .d-1{animation-delay:.18s}
+.scene.active .d-2{animation-delay:.36s}
+.scene.active .d-3{animation-delay:.54s}
+.scene.active .d-4{animation-delay:.72s}
+.scene.active .d-5{animation-delay:.9s}
+
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes scalein{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes pulseV{0%,100%{box-shadow:0 0 0 0 rgba(66,133,244,.5)}50%{box-shadow:0 0 0 14px rgba(66,133,244,0)}}
+@keyframes typewriter{from{width:0}to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+
+/* ── Player chrome ───────────────────────────────────────────────────── */
+.hud{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:50;background:rgba(11,18,48,0.7);padding:8px 14px;border-radius:999px;backdrop-filter:blur(10px);border:1px solid var(--stage-hairline)}
+.hud .dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.18);transition:all 250ms ease}
+.hud .dot.done{background:var(--mb-accent);opacity:.55}
+.hud .dot.cur{background:#93B4FF;width:22px;border-radius:99px;box-shadow:0 0 14px #93B4FF}
+.caption{position:fixed;bottom:62px;left:50%;transform:translateX(-50%);max-width:880px;padding:0 24px;text-align:center;font-size:14px;color:var(--stage-text-2);background:none;pointer-events:none;z-index:49}
+
+/* ── Start gate ──────────────────────────────────────────────────────── */
+.start{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:var(--stage-bg);z-index:100;text-align:center;padding:32px;color:var(--stage-text)}
+.start.hidden{opacity:0;pointer-events:none;transition:opacity 700ms ease}
+.start h1{font-family:var(--font-display);font-size:42px;font-weight:900;letter-spacing:-0.02em;max-width:780px}
+.start h1 em{font-style:normal;color:#93B4FF}
+.start .sub{font-size:15px;color:var(--stage-text-3);max-width:560px;line-height:1.5}
+.start .play{margin-top:8px;background:var(--grad-1);color:#FFFFFF;border:none;padding:14px 32px;border-radius:999px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 14px 30px rgba(30,58,138,0.5)}
+.start .play:hover{transform:translateY(-1px)}
+.start .hint{font-size:11px;color:var(--stage-text-mute);letter-spacing:0.06em;margin-top:8px}

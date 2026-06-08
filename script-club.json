@@ -1,0 +1,620 @@
+{
+  "title": "Sports Network Portal — Club Demo · Full Product Tour",
+  "voiceCode": "am_adam",
+  "estimatedDurationSec": 600,
+  "scenes": [
+    {
+      "order": 1,
+      "chapter": "Open",
+      "sceneType": "cover",
+      "title": "Sports Network Portal",
+      "durationSec": 12,
+      "narration": "this is sports network portal. one platform built specifically for sports clubs — academies, federations, multi-sport organizations. web for your staff, mobile for your members. in the next ten minutes, we'll walk through every module so you can decide what to subscribe to. let's start with the problem.",
+      "bullets": [
+        "one platform for sports clubs",
+        "web for staff · mobile for members",
+        "modular subscription"
+      ]
+    },
+    {
+      "order": 2,
+      "chapter": "Open",
+      "sceneType": "overview",
+      "title": "Your club runs on 5 disconnected tools",
+      "durationSec": 15,
+      "narration": "your club probably runs on five disconnected tools. whatsapp for announcements, excel for attendance, a separate pos for the store, paper forms for admissions, and someone's personal notes for payroll. every handoff loses data, every parent asks the same question twice, and finance never matches reality. snp replaces all of that with one connected system.",
+      "bullets": [
+        "whatsapp · excel · pos · paper · notes",
+        "every handoff loses data",
+        "finance never reconciles"
+      ]
+    },
+    {
+      "order": 3,
+      "chapter": "Open",
+      "sceneType": "overview",
+      "title": "One platform · web + mobile",
+      "durationSec": 14,
+      "narration": "here's the model. one platform, two surfaces. the web portal is where staff run the club — coaches, hr, finance, admin. the mobile app is for everyone else — players, parents, members, vip guests. same database, same source of truth. nine modules total, and you only pay for what you turn on.",
+      "bullets": [
+        "web portal for staff",
+        "mobile app for members",
+        "9 modules · pick what you need"
+      ]
+    },
+    {
+      "order": 4,
+      "chapter": "Open",
+      "sceneType": "browser-screen",
+      "title": "Subscription · pick your modules",
+      "moduleKey": "Subscription",
+      "durationSec": 16,
+      "narration": "subscription works like this. you see all nine modules — game management, hr, finance, store, clinic, content hub, announcements, vip club, employees. toggle on what you need, leave the rest off. pricing scales with active members and active modules. start with three, add more as you grow. now let's open the first one.",
+      "headerElements": [
+        "Modules",
+        "Billing",
+        "Members",
+        "Add-ons"
+      ],
+      "bullets": [
+        "9 modules · toggle on/off",
+        "scales with active members",
+        "start small · grow modular"
+      ],
+      "rows": [
+        "Game Management · SAR 1,200/mo — Active",
+        "HR & Payroll · SAR 1,800/mo — Active",
+        "Finance · SAR 1,500/mo — Active",
+        "Store & POS · SAR 900/mo — Inactive",
+        "VIP Club · SAR 2,400/mo — Trial"
+      ]
+    },
+    {
+      "order": 5,
+      "chapter": "Game Management",
+      "sceneType": "browser-screen",
+      "title": "Game Management · Overview",
+      "moduleKey": "GameManagement",
+      "durationSec": 20,
+      "narration": "game management is the heart of a sports club. this is the overview. four sports active — football, basketball, tennis, karate. each sport has multi-stage progression, junior moving up to senior. you can see football has four age categories and twelve coaches. the riyadh spring cup is in progress with a budget of eighty-five thousand riyals. one tap and you're inside the tournament.",
+      "headerElements": [
+        "Search",
+        "Filter by Sport",
+        "+ Add Game",
+        "Filter by Stage"
+      ],
+      "bullets": [
+        "4 sports · multi-stage progression",
+        "tournaments + leagues + admissions",
+        "junior to senior pathways"
+      ],
+      "rows": [
+        "Football · Stages: Junior, Senior | كرة القدم · 4 age categories · 12 coaches — Multi-stage · Active",
+        "Riyadh Spring Cup 2026 · King Fahd | كأس الربيع · ميزانية 85,000 ر.س — Senior · In progress",
+        "Basketball · U-14, U-16, U-18 | كرة السلة · Coach Mohammed Al-Sayed — Multi-stage · Active",
+        "Jeddah Tennis Open · 24 teams | بطولة جدة المفتوحة للتنس — Open · Pending",
+        "Karate Federation · 8 dojos | اتحاد الكاراتيه — Multi-stage · Active"
+      ]
+    },
+    {
+      "order": 6,
+      "chapter": "Game Management",
+      "sceneType": "browser-screen",
+      "title": "Admission Review · pending queue",
+      "moduleKey": "GameManagement",
+      "durationSec": 18,
+      "narration": "every new player application lands here. yousef al-mutairi applied for football under-sixteen two days ago. you see his trial score, medical clearance, the fee status — all on one card. approve, reject, or move him to a different age group. no more chasing paper forms between the coach and the front desk.",
+      "headerElements": [
+        "Pending 14",
+        "Approved",
+        "Rejected",
+        "+ Manual Entry"
+      ],
+      "bullets": [
+        "one card per applicant",
+        "trial · medical · fees together",
+        "approve in seconds"
+      ],
+      "rows": [
+        "Yousef Al-Mutairi | يوسف المطيري · Football U-16 — Trial 8.4/10 · Pending",
+        "Sara Al-Otaibi | سارة العتيبي · Tennis Junior — Medical cleared · Pending",
+        "Khalid Bin Rashid | خالد بن راشد · Basketball U-14 — Fee paid SAR 1,800 · Approved",
+        "Maryam Al-Zahra | مريم الزهراء · Karate Beginner — Awaiting trial · Pending",
+        "Ali Hassan | علي حسن · Football U-12 — Re-application · Review"
+      ]
+    },
+    {
+      "order": 7,
+      "chapter": "Game Management",
+      "sceneType": "browser-screen",
+      "title": "Applicant History · full timeline",
+      "moduleKey": "GameManagement",
+      "durationSec": 15,
+      "narration": "click into a player and you get the full timeline. yousef's previous trial, last season's stats, his sibling who's already a member, parent contact, payment history. coaches love this because they walk into evaluations already knowing the kid. that's game management. next up — your staff.",
+      "headerElements": [
+        "Profile",
+        "Trials",
+        "Stats",
+        "Family",
+        "Payments"
+      ],
+      "bullets": [
+        "full applicant timeline",
+        "linked siblings + parents",
+        "coaches arrive prepared"
+      ],
+      "rows": [
+        "Trial 1 · Oct 2025 — Score 7.8 · Coach Ahmed",
+        "Trial 2 · Mar 2026 — Score 8.4 · Coach Ahmed",
+        "Sibling · Faisal Al-Mutairi | فيصل المطيري — Active · Football U-12",
+        "Parent · Mohammed Al-Mutairi — +966 50 xxx 4421",
+        "Last payment · SAR 1,800 · Registration — Paid"
+      ]
+    },
+    {
+      "order": 8,
+      "chapter": "HR",
+      "sceneType": "browser-screen",
+      "title": "HR · Staff · 142 active",
+      "moduleKey": "HR",
+      "durationSec": 18,
+      "narration": "the hr module. one hundred forty-two active staff across all branches. filter by role — coach, trainer, medical, admin. you see ahmed al-mansoori, head football coach at riyadh headquarters. fatima saeed is on six days of medical leave. omar is on notice. every status change flows into payroll automatically.",
+      "headerElements": [
+        "Search",
+        "Filter by Role",
+        "Filter by Branch",
+        "+ Add Employee",
+        "Bulk Import"
+      ],
+      "bullets": [
+        "142 staff · multi-branch",
+        "filter by role · status · branch",
+        "status flows into payroll"
+      ],
+      "rows": [
+        "Ahmed Al-Mansoori | أحمد المنصوري · Head Football Coach — Riyadh HQ · Active",
+        "Yusuf Khan | يوسف خان · Strength & Conditioning — Full-time · Active",
+        "Fatima Saeed | فاطمة سعيد · Physiotherapist — Medical · 6 days leave · On leave",
+        "Omar Al-Farsi | عمر الفارسي · U-15 Basketball — Contract · Notice",
+        "Layla Hassan | ليلى حسن · Front Desk — Jeddah Branch · Active"
+      ]
+    },
+    {
+      "order": 9,
+      "chapter": "HR",
+      "sceneType": "browser-screen",
+      "title": "Payroll · monthly run",
+      "moduleKey": "HR",
+      "durationSec": 18,
+      "narration": "here's payroll for the current month. one hundred forty-two staff, total run of four hundred eighty-six thousand riyals. shift-based coaches get hourly multipliers, full-time staff get their salary plus allowances, and the full-and-final workflow handles exits cleanly with end-of-service gratuity. one click to approve, another to send to finance.",
+      "headerElements": [
+        "Run Month",
+        "Pending Approval",
+        "Exceptions",
+        "FnF Queue"
+      ],
+      "bullets": [
+        "monthly run · SAR 486,200",
+        "shift + salary + allowances",
+        "FnF with EOS gratuity"
+      ],
+      "rows": [
+        "Ahmed Al-Mansoori — Base 18,000 + 2,400 allowance · SAR 20,400",
+        "Yusuf Khan — Base 12,500 + overtime 1,800 · SAR 14,300",
+        "Coach Mohammed · Karate — Hourly 64 hrs × SAR 220 · SAR 14,080",
+        "Omar Al-Farsi · FnF — EOS gratuity SAR 22,400 · Pending",
+        "Layla Hassan — Base 8,500 + transport 800 · SAR 9,300"
+      ]
+    },
+    {
+      "order": 10,
+      "chapter": "Finance",
+      "sceneType": "browser-screen",
+      "title": "Finance · Cash Flow Command Center",
+      "moduleKey": "Finance",
+      "durationSec": 20,
+      "narration": "finance is your command center. revenue this month — six hundred forty-two thousand riyals. outstanding — eighty-nine thousand. overdue bucket — twenty-three thousand, four invoices. the pending queue on the right shows everything waiting for your sign-off — refund requests, the full-and-final from omar, this month's payroll. multi-currency reports if you operate across riyadh, dubai, or beyond.",
+      "headerElements": [
+        "MTD",
+        "Aging",
+        "Pending Queue",
+        "Reports",
+        "Currency Switch"
+      ],
+      "bullets": [
+        "revenue MTD · outstanding · overdue",
+        "pending queue in one place",
+        "SAR · AED · USD reporting"
+      ],
+      "rows": [
+        "Revenue MTD — SAR 642,800 · +12% vs last month",
+        "Outstanding — SAR 89,400 · 23 invoices",
+        "Overdue 30+ days — SAR 23,100 · 4 invoices",
+        "Pending Requests — 7 refunds · 2 FnF · 1 payroll",
+        "Cash on hand — SAR 1,284,500 · across 3 accounts"
+      ]
+    },
+    {
+      "order": 11,
+      "chapter": "Finance",
+      "sceneType": "browser-screen",
+      "title": "Transactions · invoice ledger",
+      "moduleKey": "Finance",
+      "durationSec": 16,
+      "narration": "drill into transactions. football academy fees just landed — one hundred eighty-four thousand, paid. swimming lessons for under-twelves — twenty-seven thousand, pending. coach payroll for the karate stage is forty-eight thousand and overdue, which is why it's flagged. every line links back to the source — the member, the invoice, the bank reference.",
+      "headerElements": [
+        "All",
+        "Income",
+        "Expense",
+        "Pending",
+        "Overdue",
+        "Export"
+      ],
+      "bullets": [
+        "every line linked to source",
+        "filter by status · category",
+        "audit trail end-to-end"
+      ],
+      "rows": [
+        "Football Academy Fees | رسوم أكاديمية كرة القدم — SAR 184,500 · Paid",
+        "Swimming Lessons (U-12) | دروس السباحة — SAR 27,600 · Pending",
+        "Coach Payroll · Karate Stage | رواتب مدربي الكاراتيه — SAR 48,200 · Overdue",
+        "Tournament Sponsorship · STC | رعاية إس تي سي — SAR 120,000 · Paid",
+        "Equipment · Nike Order | معدات نايكي — SAR 38,400 · Approved"
+      ]
+    },
+    {
+      "order": 12,
+      "chapter": "Store",
+      "sceneType": "browser-screen",
+      "title": "Store · merch + equipment",
+      "moduleKey": "Store",
+      "durationSec": 15,
+      "narration": "the store module. sell jerseys, equipment, branded gear directly to members. inventory is live — three hundred forty-seven units of the home kit, twelve left of the goalkeeper gloves so you reorder. members buy from the mobile app, walk-ins use the front desk pos. every sale hits finance instantly, no double-entry.",
+      "headerElements": [
+        "Catalog",
+        "Inventory",
+        "Orders",
+        "POS",
+        "Discounts"
+      ],
+      "bullets": [
+        "live inventory · auto-reorder alerts",
+        "mobile + front-desk POS",
+        "sales flow to finance instantly"
+      ],
+      "rows": [
+        "Home Kit 2026 · Jersey | قميص المنزل — 347 in stock · SAR 280",
+        "Goalkeeper Gloves · Adult | قفازات حارس — 12 left · Reorder · SAR 220",
+        "Training Cone Set × 20 | مخاريط التدريب — 58 in stock · SAR 95",
+        "Member Water Bottle | زجاجة ماء — 412 in stock · SAR 35",
+        "Tennis Racket · Wilson Pro | مضرب تنس — 8 in stock · SAR 1,400"
+      ]
+    },
+    {
+      "order": 13,
+      "chapter": "Clinic",
+      "sceneType": "browser-screen",
+      "title": "Clinic · injuries + medical",
+      "moduleKey": "Clinic",
+      "durationSec": 16,
+      "narration": "the clinic module. every injury logged, every clearance tracked. fatima the physio sees three players today — a hamstring strain, an ankle rehab on week four, and a pre-season screening. when a player is not cleared, the coach sees it in game management automatically. medical confidentiality is preserved — coaches see status, not diagnosis.",
+      "headerElements": [
+        "Today's Sessions",
+        "Active Cases",
+        "Clearances",
+        "+ New Visit"
+      ],
+      "bullets": [
+        "injury log + rehab timeline",
+        "auto-blocks uncleared players",
+        "diagnosis stays confidential"
+      ],
+      "rows": [
+        "Faisal Al-Mutairi | فيصل المطيري · Hamstring strain — Week 2 · Not cleared",
+        "Sara Al-Otaibi | سارة العتيبي · Ankle rehab — Week 4 · Conditional",
+        "U-16 Football Squad | تحت 16 — Pre-season screening · 18 players today",
+        "Coach Mohammed | المدرب محمد · Annual physical — Cleared",
+        "Maryam Al-Zahra | مريم الزهراء · Concussion protocol — Day 7 · Hold"
+      ]
+    },
+    {
+      "order": 14,
+      "chapter": "Content Hub",
+      "sceneType": "browser-screen",
+      "title": "Content Hub · publish to mobile",
+      "moduleKey": "ContentHub",
+      "durationSec": 15,
+      "narration": "the content hub. this is what your members see in the mobile app — match highlights, training tips, club news, coach spotlights. you publish once here, it appears on every member's phone. you can schedule posts, target by age group, and pin announcements. last week's derby highlights reached two thousand four hundred members.",
+      "headerElements": [
+        "Published",
+        "Scheduled",
+        "Drafts",
+        "+ New Post",
+        "Analytics"
+      ],
+      "bullets": [
+        "publish once · reach all phones",
+        "schedule + target by age group",
+        "engagement analytics included"
+      ],
+      "rows": [
+        "Derby Highlights · Riyadh vs Jeddah | أبرز لقطات الديربي — 2,418 views · Published",
+        "Coach Tips · Sprint Mechanics | نصائح المدرب — 1,205 views · Published",
+        "Eid Tournament Registration | تسجيل بطولة العيد — Scheduled · May 28",
+        "U-14 Match Report | تقرير مباراة تحت 14 — Draft",
+        "New Pitch Opening · Jeddah | افتتاح ملعب جدة — Pinned · 3,840 views"
+      ]
+    },
+    {
+      "order": 15,
+      "chapter": "Announcements",
+      "sceneType": "browser-screen",
+      "title": "Announcements · time-critical comms",
+      "moduleKey": "Announcement",
+      "durationSec": 14,
+      "narration": "announcements are different from content. content is engagement — announcements are time-critical. training canceled due to weather. emergency drill at five p.m. tournament bracket released. these go out as push notifications, sms, and email simultaneously, with read receipts so you know who actually got the message.",
+      "headerElements": [
+        "Active",
+        "Scheduled",
+        "+ New Announcement",
+        "Audiences"
+      ],
+      "bullets": [
+        "push + SMS + email together",
+        "read receipts per member",
+        "audience-targeted delivery"
+      ],
+      "rows": [
+        "Training canceled · weather | إلغاء التدريب بسبب الطقس — Sent to 1,240 · 92% read",
+        "Emergency drill · 5pm | تدريب الطوارئ — Sent to 2,100 · 88% read",
+        "Tournament bracket released | جدول البطولة — Sent to 680 · 95% read",
+        "Fee deadline reminder | تذكير بموعد الرسوم — Scheduled · Friday 9am",
+        "Bus route change | تغيير مسار الحافلة — Sent to 340 · 71% read"
+      ]
+    },
+    {
+      "order": 16,
+      "chapter": "Employees",
+      "sceneType": "browser-screen",
+      "title": "Employees · self-service hub",
+      "moduleKey": "Employees",
+      "durationSec": 14,
+      "narration": "employees is the self-service side of hr. staff log into the portal and request leave, submit expenses, download payslips, see their schedule. ahmed has eighteen leave days remaining. yusuf just submitted a fuel claim for three hundred forty riyals. you approve in two clicks. no more whatsapp screenshots of expense receipts.",
+      "headerElements": [
+        "My Profile",
+        "Leave",
+        "Expenses",
+        "Payslips",
+        "Schedule"
+      ],
+      "bullets": [
+        "leave + expenses + payslips",
+        "self-service from any device",
+        "two-click approvals for managers"
+      ],
+      "rows": [
+        "Ahmed Al-Mansoori · Leave request — 3 days · May 15 · Pending",
+        "Yusuf Khan · Expense claim — Fuel · SAR 340 · Submitted",
+        "Fatima Saeed · Medical leave — Auto-approved · 6 days",
+        "Omar Al-Farsi · Payslip — April 2026 · Downloaded",
+        "Layla Hassan · Shift swap — With Noor · Approved"
+      ]
+    },
+    {
+      "order": 17,
+      "chapter": "VIP Club",
+      "sceneType": "browser-screen",
+      "title": "VIP Club · premium tier",
+      "moduleKey": "VipClub",
+      "durationSec": 17,
+      "narration": "the vip club module. this is your premium tier — board members, lifetime members, corporate sponsors. eighty-four vip members right now. they get reserved parking, lounge access, priority booking on courts, and concierge support. each vip has a relationship manager assigned. churn here costs you a lot, so the dashboard shows engagement scores and last-visit dates upfront.",
+      "headerElements": [
+        "VIP Roster",
+        "Bookings",
+        "Concierge Queue",
+        "Engagement"
+      ],
+      "bullets": [
+        "84 VIP members · concierge layer",
+        "engagement score per member",
+        "priority court + lounge booking"
+      ],
+      "rows": [
+        "Sheikh Abdullah Al-Rashid | الشيخ عبدالله الراشد · Lifetime — Engagement 94 · Active",
+        "Faisal Holdings | شركة فيصل القابضة · Corporate — Engagement 81 · Active",
+        "Dr. Noura Al-Saud | د. نورة آل سعود · Board — Last visit 2d · Active",
+        "STC Sports | إس تي سي سبورتس · Sponsor — Engagement 68 · At risk",
+        "Mr. Tareq Al-Zamil | السيد طارق الزامل · Lifetime — Engagement 52 · Re-engage"
+      ]
+    },
+    {
+      "order": 18,
+      "chapter": "Mobile",
+      "sceneType": "phone-screen",
+      "title": "Mobile · the member side",
+      "moduleKey": "ContentHub",
+      "durationSec": 16,
+      "narration": "now flip to mobile. this is what your members see. their schedule, their kid's attendance — eighteen present, two absent today in the under-fourteen squad. invoices, content feed, store, vip lounge. parents stop calling the front desk because everything they need is two taps away. one app, one login, your club in their pocket.",
+      "headerElements": [
+        "Home",
+        "Schedule",
+        "Pay",
+        "Feed",
+        "Store"
+      ],
+      "bullets": [
+        "schedule · attendance · invoices",
+        "18 present · 2 absent today",
+        "front desk calls drop sharply"
+      ],
+      "rows": [
+        "Today · Football U-14 training | تدريب اليوم — 18 present · 2 absent",
+        "Invoice · May fees | فاتورة شهر مايو — SAR 1,800 · Pay now",
+        "Feed · Derby highlights | أبرز الديربي — 2 min ago",
+        "Booking · Tennis court 3 | حجز ملعب تنس 3 — Tomorrow 6pm",
+        "VIP Lounge · entry | دخول الصالة — Tap to check in"
+      ]
+    },
+    {
+      "order": 19,
+      "chapter": "Mobile",
+      "sceneType": "phone-screen",
+      "title": "Parent view · child-linked",
+      "moduleKey": "GameManagement",
+      "durationSec": 14,
+      "narration": "for parents, the app is child-linked. one parent can have multiple kids enrolled across different sports. mrs. al-mutairi sees yousef in football under-sixteen and faisal in basketball under-twelve from one screen. payments roll up per family, attendance shows per child, and announcements route to the right parent automatically.",
+      "headerElements": [
+        "My Children",
+        "Family Invoice",
+        "Notifications"
+      ],
+      "bullets": [
+        "multiple children · one login",
+        "family-rolled invoicing",
+        "per-child attendance + notes"
+      ],
+      "rows": [
+        "Yousef Al-Mutairi · Football U-16 — Present today · Coach note: great session",
+        "Faisal Al-Mutairi · Basketball U-12 — Absent · Reason: medical",
+        "Family invoice · May | فاتورة العائلة — SAR 3,200 · Due May 28",
+        "Notification · U-16 match Friday | مباراة الجمعة — Tap for details",
+        "Sibling discount applied | خصم الإخوة — Saved SAR 280"
+      ]
+    },
+    {
+      "order": 20,
+      "chapter": "Game Management",
+      "sceneType": "browser-screen",
+      "title": "Tournament Bracket · live ops",
+      "moduleKey": "GameManagement",
+      "durationSec": 16,
+      "narration": "back to game management for one more view — live tournament ops. the riyadh spring cup quarter-final, two-one to al-hilal academy in the seventy-third minute. you can see the lineup, substitutions, yellow cards, the next fixture. parents follow on the mobile app, results auto-publish to the content hub, and prize money flows through finance. one module, full event lifecycle.",
+      "headerElements": [
+        "Bracket",
+        "Live Match",
+        "Fixtures",
+        "Stats",
+        "Prize Pool"
+      ],
+      "bullets": [
+        "live score + lineups",
+        "auto-publish results",
+        "prize money flows to finance"
+      ],
+      "rows": [
+        "Al-Hilal Academy vs Al-Nassr Youth — 2-1 · 73' · Live",
+        "Yellow card · Khalid #7 | بطاقة صفراء — 68'",
+        "Substitution · Ali in, Omar out | تبديل — 70'",
+        "Next fixture · Semi-final · Saturday 5pm",
+        "Prize pool · SAR 85,000 — 1st 45k · 2nd 25k · 3rd 15k"
+      ]
+    },
+    {
+      "order": 21,
+      "chapter": "Finance",
+      "sceneType": "browser-screen",
+      "title": "Multi-currency Reports",
+      "moduleKey": "Finance",
+      "durationSec": 14,
+      "narration": "if you operate across borders — riyadh, dubai, doha — finance handles multi-currency natively. revenue rolls up in your base currency, but each branch transacts in local. dubai branch did one hundred twelve thousand dirhams last month, which lands as one hundred fourteen thousand riyals on the consolidated report. fx is automatic, audited, and exportable.",
+      "headerElements": [
+        "Consolidated",
+        "By Branch",
+        "FX Rates",
+        "Export"
+      ],
+      "bullets": [
+        "base + local currency per branch",
+        "auto FX with audit log",
+        "consolidated reports in one click"
+      ],
+      "rows": [
+        "Riyadh HQ — SAR 412,800 · Base",
+        "Dubai Branch — AED 112,400 → SAR 114,200",
+        "Doha Branch — QAR 68,200 → SAR 70,100",
+        "USD Sponsorships — USD 24,500 → SAR 91,800",
+        "Consolidated MTD — SAR 688,900"
+      ]
+    },
+    {
+      "order": 22,
+      "chapter": "HR",
+      "sceneType": "browser-screen",
+      "title": "Scheduling · multi-shift",
+      "moduleKey": "HR",
+      "durationSec": 14,
+      "narration": "scheduling deserves its own beat. sports clubs run morning, afternoon, and evening shifts — coaches, lifeguards, front desk, security. snp handles all three with conflict detection. if you double-book coach mohammed for the under-fourteen session and the karate stage at the same time, the system flags it before it goes live. clean rotas, no surprises.",
+      "headerElements": [
+        "Today",
+        "Week View",
+        "Conflicts",
+        "Publish"
+      ],
+      "bullets": [
+        "morning · afternoon · evening shifts",
+        "conflict detection before publish",
+        "clean rotas across roles"
+      ],
+      "rows": [
+        "Coach Mohammed · 6am-10am — U-14 Football · OK",
+        "Coach Mohammed · 4pm-8pm — Karate Stage · OK",
+        "Lifeguard Pool A · 6am-2pm — Yusra · Confirmed",
+        "Front Desk · 2pm-10pm — Layla · Confirmed",
+        "Security Night · 10pm-6am — Ali · Conflict flag"
+      ]
+    },
+    {
+      "order": 23,
+      "chapter": "Store",
+      "sceneType": "phone-screen",
+      "title": "Member checkout · mobile store",
+      "moduleKey": "Store",
+      "durationSec": 13,
+      "narration": "one last touch on the store. members browse and check out from the phone. apple pay, mada, stc pay, all wired in. order goes to fulfillment, inventory decrements live, finance sees the revenue in real time. average order value at one club we work with is two hundred sixty riyals. that adds up fast across two thousand members.",
+      "headerElements": [
+        "Shop",
+        "Cart",
+        "Checkout"
+      ],
+      "bullets": [
+        "Apple Pay · mada · STC Pay",
+        "live inventory decrement",
+        "AOV trending SAR 260"
+      ],
+      "rows": [
+        "Home Kit 2026 × 1 — SAR 280",
+        "Member Water Bottle × 2 — SAR 70",
+        "Subtotal — SAR 350 · VAT SAR 52.50",
+        "Pay with mada · ····4421 — Confirm",
+        "Order #SNP-28419 — Ready for pickup"
+      ]
+    },
+    {
+      "order": 24,
+      "chapter": "Platform",
+      "sceneType": "overview",
+      "title": "Multi-tenant · multi-language · multi-currency",
+      "durationSec": 16,
+      "narration": "one more thing. snp is multi-tenant out of the box. one parent organization can run multiple branches, multiple sports academies, even franchise locations — each with its own staff, members, books. arabic and english side by side, right-to-left layouts native. saudi riyal, uae dirham, qatari riyal, us dollar. built for the region, ready for the world.",
+      "bullets": [
+        "multi-tenant · multi-branch",
+        "Arabic + English · RTL native",
+        "SAR · AED · QAR · USD"
+      ]
+    },
+    {
+      "order": 25,
+      "chapter": "Close",
+      "sceneType": "close",
+      "title": "This is how a club becomes a platform",
+      "durationSec": 13,
+      "narration": "this is how a club becomes a platform. nine modules, one database, web for your team, mobile for your members. you stop running on five disconnected tools and start running on one. when you're ready, pick the modules you need and we'll have you live in under two weeks. sports network portal. let's build your club into a platform.",
+      "bullets": [
+        "9 modules · 1 database",
+        "live in under 2 weeks",
+        "sports network portal"
+      ]
+    }
+  ]
+}
