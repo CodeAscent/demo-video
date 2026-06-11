@@ -53,6 +53,17 @@ Open either `demo-{club,mobile}.html` in Chrome → click **▶ play full tour**
 - `←` — go back one scene
 - `⌘ + ⌃ + F` — fullscreen (use this before screen-recording)
 
+**Touch controls (phones / tablets)**:
+- tap the right side of the screen — next scene
+- tap the left side — go back
+- swipe left / right — next / back
+
+Both demos are mobile responsive. In landscape the canvas is the original
+1280×720; in portrait it re-stacks onto a 720×1280 canvas (split scenes put
+copy above the mock, browser KPIs re-grid 2×2, the sidebar narrows) — all
+handled by the `@media (orientation: portrait)` layer in `base.css`. The
+player JS reads the live canvas size, so nothing else needs to change.
+
 **Preview a specific scene without audio**: append `?scene=N` to the URL, e.g.
 `demo-club.html?scene=14` jumps straight to scene 14 and shows the static frame.
 

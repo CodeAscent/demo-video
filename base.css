@@ -113,6 +113,7 @@ html,body{
   font-family:var(--font-body);
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   font-feature-settings:'ss01','cv11';
+  overscroll-behavior:none;touch-action:manipulation;
 }
 
 /* ── Stage: 1280×720 canvas, scaled to viewport ───────────────────────── */
@@ -122,6 +123,7 @@ html,body{
 }
 .stage-inner{
   width:1280px;height:720px;position:relative;transform-origin:center;
+  flex:none; /* never flex-shrink below the design size — JS owns the fit-to-viewport scale */
   background:var(--stage-bg);
   background-image:
     radial-gradient(ellipse 90% 60% at 20% 0%,rgba(66,133,244,0.18),transparent 60%),
@@ -131,7 +133,7 @@ html,body{
 /* ── Scene: only the .active one is shown ─────────────────────────────── */
 .scene{
   position:absolute;inset:0;display:none;
-  padding:48px 56px;align-items:center;justify-content:center;
+  padding:48px 56px;align-items:center;justify-content:center;gap:24px;
 }
 .scene.active{display:flex}
 
@@ -367,4 +369,80 @@ html,body{
 .start .sub{font-size:15px;color:var(--stage-text-3);max-width:560px;line-height:1.5}
 .start .play{margin-top:8px;background:var(--grad-1);color:#FFFFFF;border:none;padding:14px 32px;border-radius:999px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 14px 30px rgba(30,58,138,0.5)}
 .start .play:hover{transform:translateY(-1px)}
-.start .hint{font-size:11px;color:var(--stage-text-mute);letter-spacing:0.06em;margin-top:8px}
+.start .hint{font-size:11px;color:var(--stage-text-mute);letter-spacing:0.06em;margin-top:8px;line-height:1.7}
+
+/* =========================================================================
+ * MOBILE PORTRAIT RE-LAYOUT
+ *
+ * In landscape the canvas stays the original 1280×720. In portrait the
+ * canvas becomes 720×1280 and scenes re-stack: .split columns become rows
+ * (copy on top, mock below — also for .flip, via order), the browser mock
+ * drops its duplicate header pills and re-grids KPIs 2×2, and scenes whose
+ * direct children are siblings (eyebrow + phone) stack vertically.
+ * The player JS reads .stage-inner's live size, so no JS coupling here.
+ * ========================================================================= */
+@media (orientation: portrait) {
+  .stage-inner{width:720px;height:1280px}
+  .scene{padding:36px 28px;flex-direction:column;gap:18px}
+
+  /* Split layouts: single column, copy first (covers .flip's mock-first DOM) */
+  .split,.split.flip{grid-template-columns:1fr;gap:24px;padding:8px 0;align-content:center}
+  .split .copy{order:-1;gap:12px}
+  .split .copy h2{font-size:30px}
+  .split .copy .sub{font-size:15px;max-width:none}
+  .split .copy ul.bullets{gap:9px}
+  .split .copy ul.bullets li{font-size:14px}
+  .split .copy .metric-row{margin-top:8px}
+  .split .mock{order:1;min-width:0}
+
+  /* Full-bleed browser scenes have ~1200px of canvas height in portrait —
+     let the mock grow past the landscape cap so tables aren't sliced mid-row */
+  .browser{max-height:820px}
+
+  /* Browser mock: narrower sidebar, wrapped header, KPIs 2×2.
+     The .b-actions pills duplicate the .b-chips row right below them in
+     every module scene — hide the pills, keep real buttons (.b-btn). */
+  .b-sidebar{width:140px;font-size:12px;padding:12px 6px}
+  .b-side-item{font-size:12px;padding:7px 8px;gap:8px}
+  .b-pageheader{flex-wrap:wrap}
+  .b-actions{flex-wrap:wrap}
+  .b-pageheader .b-actions .pill{display:none}
+  .b-kpis{grid-template-columns:repeat(2,1fr)}
+
+  /* Cover scenes: step the display type down for a 664px-wide canvas */
+  .cover-block{max-width:664px;padding:0 8px;gap:16px}
+  .cover-block h1{font-size:46px}
+  .cover-block .tag{font-size:16px;max-width:560px}
+  .cover-block .bullets li{font-size:16px}
+
+  /* Three-phone language trio (mobile demo scene 27): the 718px-wide row
+     keeps its internal layout and shrinks visually to fit the canvas */
+  .phone-pair{transform:scale(0.8);transform-origin:center center}
+
+  /* Player chrome lives in viewport space, not canvas space */
+  .hud{
+    gap:4px;padding:7px 10px;max-width:calc(100vw - 16px);
+    flex-wrap:wrap;justify-content:center;
+    bottom:calc(12px + env(safe-area-inset-bottom,0px));
+  }
+  .caption{bottom:calc(48px + env(safe-area-inset-bottom,0px));font-size:13px;max-width:94vw;padding:0 12px}
+}
+
+/* Start gate + chrome on small screens, any orientation */
+.start svg{flex:none} /* flex column would squash the logo when height is tight */
+@media (max-width: 700px) {
+  .start{padding:24px;gap:14px}
+  .start h1{font-size:clamp(24px,6.5vw,42px)}
+  .start .sub{font-size:14px}
+  .start .play{padding:13px 28px;font-size:15px}
+  .start .hint{font-size:10px}
+}
+/* Short viewports (phone landscape): compact gate so everything fits */
+@media (max-height: 520px) {
+  .start{gap:10px;padding:20px}
+  .start svg{width:56px !important;height:56px !important}
+  .start h1{font-size:clamp(18px,5.5vh,28px)}
+  .start .sub{font-size:12px}
+  .start .play{padding:10px 24px;font-size:14px;margin-top:2px}
+  .start .hint{font-size:9px;margin-top:2px}
+}
