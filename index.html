@@ -41,9 +41,18 @@
   .logo .stack{display:flex;flex-direction:column;line-height:1.05}
   .logo .wordmark{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;letter-spacing:0.02em}
   .logo .sub{font-size:10px;letter-spacing:0.32em;color:var(--text-3);text-transform:uppercase;font-weight:500;margin-top:3px}
-  header .links{display:flex;gap:18px;font-size:13px;color:var(--text-3);font-weight:500}
+  header .links{display:flex;align-items:center;gap:18px;font-size:13px;color:var(--text-3);font-weight:500}
   header .links a{color:var(--text-3);text-decoration:none}
   header .links a:hover{color:var(--brand-light)}
+  /* Partner-recruitment CTA — gradient pill, matches the demo play buttons. */
+  header .links .partner-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--grad-1);color:#fff;font-weight:700;letter-spacing:0.02em;
+    padding:9px 18px;border-radius:999px;
+    box-shadow:0 10px 24px rgba(30,58,138,0.4);
+    transition:transform 160ms ease,box-shadow 160ms ease;
+  }
+  header .links .partner-cta:hover{color:#fff;transform:translateY(-1px);box-shadow:0 14px 30px rgba(30,58,138,0.5)}
 
   .hero{padding:40px 0 18px;max-width:840px}
   .eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--brand-light);font-weight:600;margin-bottom:18px}
@@ -141,6 +150,7 @@
       <a href="/">Home</a>
       <a href="/portal/">Club portal</a>
       <!-- <a href="/api/">API</a> -->
+      <a class="partner-cta" href="https://getsnp.org/partner/register" target="_blank" rel="noopener noreferrer">🤝 Join as partner</a>
     </div>
   </header>
 
