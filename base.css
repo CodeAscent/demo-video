@@ -361,6 +361,22 @@ html,body{
 .hud .dot.cur{background:#93B4FF;width:22px;border-radius:99px;box-shadow:0 0 14px #93B4FF}
 .caption{position:fixed;bottom:62px;left:50%;transform:translateX(-50%);max-width:880px;padding:0 24px;text-align:center;font-size:14px;color:var(--stage-text-2);background:none;pointer-events:none;z-index:49}
 
+/* ── Partner CTA ─────────────────────────────────────────────────────── */
+/* Floating top-right corner button; z-index sits above the HUD (50) but
+   below the start gate (100) so it reveals once the tour begins. */
+.partner-cta{
+  position:fixed;top:18px;right:18px;z-index:60;
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--grad-1);color:#FFFFFF;text-decoration:none;
+  font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:-0.01em;
+  padding:10px 18px;border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  box-shadow:0 10px 24px rgba(30,58,138,0.45);
+  transition:transform 160ms ease,box-shadow 160ms ease;
+}
+.partner-cta:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(30,58,138,0.55)}
+.partner-cta .partner-cta-ico{font-size:15px;line-height:1}
+
 /* ── Start gate ──────────────────────────────────────────────────────── */
 .start{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:var(--stage-bg);z-index:100;text-align:center;padding:32px;color:var(--stage-text)}
 .start.hidden{opacity:0;pointer-events:none;transition:opacity 700ms ease}
@@ -426,6 +442,11 @@ html,body{
     bottom:calc(12px + env(safe-area-inset-bottom,0px));
   }
   .caption{bottom:calc(48px + env(safe-area-inset-bottom,0px));font-size:13px;max-width:94vw;padding:0 12px}
+  .partner-cta{
+    top:calc(12px + env(safe-area-inset-top,0px));right:12px;
+    font-size:12px;padding:8px 14px;gap:6px;
+  }
+  .partner-cta .partner-cta-ico{font-size:13px}
 }
 
 /* Start gate + chrome on small screens, any orientation */
